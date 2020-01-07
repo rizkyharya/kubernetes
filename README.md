@@ -1,8 +1,8 @@
 RIZKY HARYA R 175410001
 
-KUBERNETES
+# KUBERNETES
 
-Istilah — Istilah pada kubernetes
+## Istilah — Istilah pada kubernetes
 
 1. Pod
 Adalah grup container instance. Kita bisa menjalankan beberapa container (misalnya aplikasi web + Database) dalam satu pod. Antar container dalam satu pod bisa saling mengakses dengan menggunakan alamat localhost. Bisa di katakan pod seperti laptop yang kita pakai coding.
@@ -27,3 +27,14 @@ kita bisa membuat label jenis aplikasi, misalnya frontend, cache, database, file
 
 8. Selector
 Adalah filtering menggunakan label. Misalnya kita ingin mencari semua instance database untuk aplikasi test yang berjalan di production.
+
+
+# Membuat sebuah Deployment menggunakan Python+Flask
+pastikan sudah punya image docker "rizh_img"
+
+1. Menggunakan perintah ```kubectl create``` untuk membuat Deployment. Pod menjalankan Container berdasarkan image docker yang digunakan. Disini saya menggunakan image docker rizh/rizh_img:v1 (image ini baru saya buat, dan telah saya push ke Docker Hub). Pada Deployment ini Pod hanya memiliki 1 Container saja.
+
+```kubectl create deployment python-flask --image=lindaagustina/python-flask:v1```
+
+Output : 
+```deployment.apps/python-flask created```
