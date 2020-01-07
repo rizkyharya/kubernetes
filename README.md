@@ -78,3 +78,7 @@ rizh-flask   LoadBalancer   10.96.159.100   <pending>     5000:30949/TCP   5
 ```
 
 3. lihat di localhost
+
+![](img/end1.PNG)
+
+![](img/end2.PNG)
