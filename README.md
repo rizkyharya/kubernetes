@@ -32,7 +32,7 @@ Adalah filtering menggunakan label. Misalnya kita ingin mencari semua instance d
 # Membuat sebuah Deployment menggunakan Python+Flask
 pastikan sudah punya image docker "rizh/rizh_img"
 
-1. Menggunakan perintah ```kubectl create``` untuk membuat Deployment. Pod menjalankan Container berdasarkan image docker yang digunakan. Disini saya menggunakan image docker rizh/rizh_img:v1 (image ini baru saya buat, dan telah saya push ke Docker Hub). Pada Deployment ini Pod hanya memiliki 1 Container saja.
+1. Menggunakan perintah ```kubectl create``` untuk membuat Deployment. Pod menjalankan Container berdasarkan image docker yang digunakan. Disini saya menggunakan image docker rizh/rizh-img:v2 (image ini baru saya buat, dan telah saya push ke Docker Hub). Pada Deployment ini Pod hanya memiliki 1 Container saja.
 
 ```
 $ kubectl create deployment rizh-flask --image=rizh/rizh-img:v2
