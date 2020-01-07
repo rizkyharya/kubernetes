@@ -77,7 +77,9 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP          15m
 rizh-flask   LoadBalancer   10.96.159.100   <pending>     5000:30949/TCP   5
 ```
 
-3. lihat di localhost
+Terlihat bahwa port 5000 di expose ke port 30949
+
+4. lihat di localhost
 
 ![](img/end1.PNG)
 
